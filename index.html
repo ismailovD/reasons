@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.min.css">
+        <title>Document</title>
+    </head>
+    <body class="return__body"> 
+        <aside class="side-bar">
+            <a href="" class="side-bar__logo">
+                <img src="./images/logotype.png" class="side-bar__logo-img"
+                    alt="side-bar">
+            </a>
+            <div class="side-bar__center">
+                <ul class="side-bar__list">
+                    <li class="side-bar__item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#home"></use>
+                            </svg>
+                            Home
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#analystics"></use>
+                            </svg>
+                            Analystics
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#returns"></use>
+                            </svg>
+                            Returns
+                        </a>
+                        <span class="side-bar__count" data-count="16">16</span>
+                    </li>
+                    <li class="side-bar__item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#orders"></use>
+                            </svg>
+                            Risky Orders
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use
+                                    xlink:href="./svg/sprite.svg#integrations"></use>
+                            </svg>
+                            Integrations
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#store"></use>
+                            </svg>
+                            Store Credits
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                    <li class="side-bar__item">
+                        <a href="#!" class="side-bar__link">
+                            <svg class="side-bar__icon">
+                                <use xlink:href="./svg/sprite.svg#automation"></use>
+                            </svg>
+                            Automation
+                        </a>
+                        <span class="side-bar__count" data-count="0"></span>
+                    </li>
+                </ul>
+                <div class="side-bar__settings">
+                    <svg  class="side-bar__icon">
+                        <use xlink:href="./svg/sprite.svg#settings"></use>
+                    </svg>
+                    <div class="side-bar__dropdown">
+                        <span class="side-bar__dropdown-btn">Settings
+                        </span>
+                        <svg class="side-bar__dropdown-icon">
+                            <use
+                                xlink:href="./svg/sprite.svg#arrow-down"></use>
+                        </svg>
+                        <ul class="side-bar__dropdown-list">
+                            <li class="side-bar__dropdown-item" ><a href="#!" class="side-bar__link">Profile</a></li>
+                            <li class="side-bar__dropdown-item" ><a href="#!" class="side-bar__link">Log out</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <a href="#!" class="side-bar__link side-bar-help">
+                <svg class="side-bar__help-icon">
+                    <use xlink:href="./svg/sprite.svg#unknown"></use>
+                </svg>
+                Help Center
+            </a> 
+        </aside>
+        <div class="over__box"></div>
+        <div class="side-bar__btn">
+            <img src="./images/logo.webp" alt="" class="side-bar__img">
+        </div>
+        <div class="return__content">
+            <header class="return__header">
+                <form class="return__form">
+                    <label class="return__search">
+                        <svg class="return__search-icon">
+                            <use xlink:href="./svg/sprite.svg#search"></use>
+                        </svg>
+                        <input class="return__search-input" type="text"
+                            placeholder="Search...">
+                    </label>
+                    <div class="return__notification">
+                        <svg class="return__notification-icon">
+                            <use xlink:href="./svg/sprite.svg#bell"></use>
+                        </svg>
+                        <span class="return__notification-count">6</span>
+                    </div>
+                </form>
+                <div class="return__auth user">
+                    <div class="user__avatar">
+                        <img src="./images/avatar.webp" alt="ava"
+                            class="user__img">
+                    </div>
+                    <p class="user__name">Ronnie <span
+                            class="user__second-name">Woodkin</span></p>
+                </div>
+            </header>
+
+
+            <main class="reason__main">
+                <div class="reason__top-panel">
+                    <h1 class="reason__title">Return Reason</h1>
+                    <div class="reason__create-remove">
+                        <svg class="reason__delete">
+                            <use xlink:href="./svg/sprite.svg#delete"></use>
+                        </svg>
+                        <a href="./pages/communications.html" class="reason__add">
+                            Return Reason    
+                        </a>
+                    </div>
+                </div>
+                <div class="table__inner"> 
+                    <table class="reason__table table">
+                        <tbody>
+                            <tr class="table__row-titles">
+                                <th class="table__title">
+                                    <div class="table__checkbox">
+                                        <input id="all-check" type="checkbox">
+                                        <span class="reason__check">
+                                            <svg class="reason__check-icon">
+                                                <use
+                                                    xlink:href="./svg/sprite.svg#choose"></use>
+                                            </svg>
+                                        </span>
+                                        <label for="all-check"
+                                            class="table__label">
+                                            Return Reason
+                                        </label>
+                                    </div>
+                                </th>
+                                <th class="table__title">Allow Exchange</th>
+                                <th class="table__title">Allow Return</th>
+                                <th class="table__title">Collect Photo (s)</th>
+                                <th class="table__title">Products</th>
+                                <th class="table__title">Deeper Reasons</th>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table__reason">
+                                    <div class="table__checkbox">
+                                        <input id="checked-1" type="checkbox"
+                                            class="table__check-input">
+                                        <span class="reason__check">
+                                            <svg class="reason__check-icon">
+                                                <use
+                                                    xlink:href="./svg/sprite.svg#choose"></use>
+                                            </svg>
+                                        </span>
+                                        <label for="checked-1"
+                                            class="table__label">
+                                            Size doesn’t fit
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="table__cell table__exchange"> 
+                                        <label  class="table__label"> 
+                                            <input class="reason__input" type="checkbox">
+                                            <span class="reason__check">
+                                                <svg class="reason__check-icon">
+                                                    <use
+                                                        xlink:href="./svg/sprite.svg#choose"></use>
+                                                </svg>
+                                            </span> 
+                                        </label>
+                                    </td>
+                                <td class="table__cell table__return"> 
+                                        <label class="table__label">
+                                            <input class="reason__input" type="checkbox"> 
+                                            <span class="reason__check">
+                                                <svg class="reason__check-icon">
+                                                    <use
+                                                        xlink:href="./svg/sprite.svg#choose"></use>
+                                                </svg>
+                                            </span> 
+                                        </label> 
+                                </td>
+                                <td class="table__cell table__collect-photo">
+                                    <div class="select reason__select">
+                                        <button class="select__btn">No
+                                        </button>
+                                        <svg class="select__icon">
+                                            <use
+                                                xlink:href="./svg/sprite.svg#arrow-down"></use>
+                                        </svg>
+                                        <ul class="select__list"> 
+                                            <li class="select__item"
+                                                data-value="1">1</li>
+                                            <li class="select__item"
+                                                data-value="Multiple">Multiple</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="table__cell"><a href="#!"
+                                        class="table__link table__products">All</a></td>
+                                <td class="table__cell"><a href="#!"
+                                        class="table__link table__deeper">Configure</a></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table__reason">
+                                    <div class="table__checkbox">
+                                        <input id="checked-2" type="checkbox"
+                                            class="table__check-input">
+                                        <span class="reason__check">
+                                            <svg class="reason__check-icon">
+                                                <use
+                                                    xlink:href="./svg/sprite.svg#choose"></use>
+                                            </svg>
+                                        </span>
+                                        <label for="checked-2"
+                                            class="table__label">
+                                            Received wrong product
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="table__cell table__exchange"> 
+                                        <label  class="table__label"> 
+                                            <input class="reason__input" type="checkbox">
+                                            <span class="reason__check">
+                                                <svg class="reason__check-icon">
+                                                    <use
+                                                        xlink:href="./svg/sprite.svg#choose"></use>
+                                                </svg>
+                                            </span> 
+                                        </label>
+                                    </td>
+                                <td class="table__cell table__return"> 
+                                        <label class="table__label">
+                                            <input class="reason__input" type="checkbox"> 
+                                            <span class="reason__check">
+                                                <svg class="reason__check-icon">
+                                                    <use
+                                                        xlink:href="./svg/sprite.svg#choose"></use>
+                                                </svg>
+                                            </span> 
+                                        </label> 
+                                </td>
+                                <td class="table__cell table__collect-photo">
+                                    <div class="select reason__select">
+                                        <button class="select__btn">No
+                                        </button>
+                                        <svg class="select__icon">
+                                            <use
+                                                xlink:href="./svg/sprite.svg#arrow-down"></use>
+                                        </svg>
+                                        <ul class="select__list"> 
+                                            <li class="select__item"
+                                                data-value="1">1</li>
+                                            <li class="select__item"
+                                                data-value="Multiple">Multiple</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="table__cell"><a href="#!"
+                                        class="table__link table__products">Custom</a></td>
+                                <td class="table__cell"><a href="#!"
+                                        class="table__link table__deeper">Configure</a></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell table__reason">
+                                    <div class="table__checkbox">
+                                        <input id="checked-3" type="checkbox"
+                                            class="table__check-input">
+                                        <span class="reason__check">
+                                            <svg class="reason__check-icon">
+                                                <use
+                                                    xlink:href="./svg/sprite.svg#choose"></use>
+                                            </svg>
+                                        </span>
+                                        <label for="checked-3"
+                                            class="table__label">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In.
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="table__cell table__exchange"> 
+                                        <label  class="table__label"> 
+                                            <input class="reason__input" type="checkbox">
+                                            <span class="reason__check">
+                                                <svg class="reason__check-icon">
+                                                    <use
+                                                        xlink:href="./svg/sprite.svg#choose"></use>
+                                                </svg>
+                                            </span> 
+                                        </label>
+                                    </td>
+                                <td class="table__cell table__return"> 
+                                        <label class="table__label">
+                                            <input class="reason__input" type="checkbox"> 
+                                            <span class="reason__check">
+                                                <svg class="reason__check-icon">
+                                                    <use
+                                                        xlink:href="./svg/sprite.svg#choose"></use>
+                                                </svg>
+                                            </span> 
+                                        </label> 
+                                </td>
+                                <td class="table__cell table__collect-photo">
+                                    <div class="select reason__select">
+                                        <button class="select__btn">No
+                                        </button>
+                                        <svg class="select__icon">
+                                            <use
+                                                xlink:href="./svg/sprite.svg#arrow-down"></use>
+                                        </svg>
+                                        <ul class="select__list"> 
+                                            <li class="select__item"
+                                                data-value="1">1</li>
+                                            <li class="select__item"
+                                                data-value="Multiple">Multiple</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="table__cell"><a href="#!"
+                                        class="table__link table__products">Custom</a></td>
+                                <td class="table__cell"><a href="#!"
+                                        class="table__link table__deeper">Configure</a></td>
+                            </tr>
+                             
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+            <footer class="return__footer">
+                <ul class="return__pages">
+                    <li class="return__pages-num curent__page"><a href="#!"
+                            class="return__pages-link">1</a></li>
+                    <li class="return__pages-num"><a href="#!"
+                            class="return__pages-link">2</a></li>
+                    <li class="return__pages-num"><a href="#!"
+                            class="return__pages-link">3</a></li>
+                    <li class="return__pages-num"><a href="#!"
+                            class="return__pages-link">4</a></li>
+                    <li class="return__pages-num page__points"><a href="#!"
+                            class="return__pages-link">...</a></li>
+                    <li class="return__pages-num"><a href="#!"
+                            class="return__pages-link">10</a></li>
+                    <li class="return__pages-num"><a href="#!"
+                            class="return__pages-link">11</a></li>
+                    <li class="return__pages-num"><a href="#!"
+                            class="return__pages-link">12</a></li>
+                    <li class="return__pages-num"><a href="#!"
+                            class="return__pages-link">13</a></li>
+                </ul>
+            </footer>
+        </div>
+
+
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
