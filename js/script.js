@@ -1,7 +1,6 @@
 const   sideBarBtn = document.querySelector('.side-bar__btn'),
-        sideBar = document.querySelector('.side-bar'),
-        closeSideBar = document.querySelector('.over__box'),
-        body = document.querySelector('.return__body'),
+        sideBar = document.querySelector('.side-bar'), 
+        pageContent =document.querySelector('.global__content'), 
         selectBtns = document.querySelectorAll('.select__btn'),
         selectParent = '.select',
         selectItems = document.querySelectorAll('.select__item'),
@@ -15,14 +14,13 @@ const   sideBarBtn = document.querySelector('.side-bar__btn'),
         
 sideBarBtn.addEventListener('click', () => {
     sideBar.classList.toggle('active'); 
-    body.style.overflow ="hidden"
-});
-closeSideBar.addEventListener('click', (e) => {
-     if(e.target == closeSideBar){
-        sideBar.classList.remove('active'); 
-        body.style.overflow ="visible"
-     }
- })
+        if(sideBar.classList.contains('active')){  
+            pageContent.style.marginLeft = "275px"; 
+    }else {  
+        dropdownWindow.classList.remove('active')
+        pageContent.style.marginLeft = "65px";  
+    }
+}); 
 
 selectBtns.forEach(btn => { 
     btn.addEventListener('click', () => {  
@@ -68,5 +66,8 @@ allChecked.addEventListener('click',() => {
  })
 
  dropdownBtn.addEventListener('click', () => {
-    dropdownWindow.classList.toggle('active')
+    dropdownWindow.classList.toggle('active'); 
+    if(dropdownWindow.classList.contains('active')){
+        sideBar.classList.add('change-height')
+    }else sideBar.classList.remove('change-height')
 })
